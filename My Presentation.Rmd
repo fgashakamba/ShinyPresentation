@@ -1,0 +1,21 @@
+---
+title: "My Presentation"
+author: "Faustin GASHAKAMBA"
+date: "12/21/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## MY SHINY INTERACTIVE PLOT
+
+```{r plot, echo = FALSE, comment=FALSE}
+data("mtcars")
+#head(mtcars)
+library(plotly)
+plot_ly(mpg, x = ~cty, y = ~hwy) %>%
+  add_markers(color = ~cyl)
+```
+
