@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## MY SHINY INTERACTIVE PLOT
 
-```{r plot, echo = FALSE, comment=FALSE}
+```{r plot, echo = FALSE, warning=FALSE, message=FALSE, comment=FALSE}
 data("mtcars")
 #head(mtcars)
 library(plotly)
